@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (multiple-myos-VisualStudio2012.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  emg-data-sample.cpp
+c:\users\sespwalkup\downloads\myo-sdk-win-0.9.0\myo-sdk-win-0.9.0\include\myo\cxx\detail\throwonerror.hpp(39): warning C4297: 'myo::ThrowOnError::~ThrowOnError': function assumed not to throw an exception but does
+  c:\users\sespwalkup\downloads\myo-sdk-win-0.9.0\myo-sdk-win-0.9.0\include\myo\cxx\detail\throwonerror.hpp(39): note: destructor or deallocator has a (possibly implicit) non-throwing exception specification
+c:\users\sespwalkup\downloads\myo-sdk-win-0.9.0\myo-sdk-win-0.9.0\include\myo\cxx\detail\throwonerror.hpp(45): warning C4297: 'myo::ThrowOnError::~ThrowOnError': function assumed not to throw an exception but does
+  c:\users\sespwalkup\downloads\myo-sdk-win-0.9.0\myo-sdk-win-0.9.0\include\myo\cxx\detail\throwonerror.hpp(45): note: destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  emg-data-sample-VisualStudio2012.vcxproj -> C:\Users\sespwalkup\Downloads\myo-sdk-win-0.9.0\myo-sdk-win-0.9.0\samples\x64\Debug\emg-data-sample.exe
+  Copy required dlls to output directory
+          1 file(s) copied.
