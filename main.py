@@ -88,8 +88,8 @@ class Listener(myo.DeviceListener):
 
     def on_emg(self, event):
         emg = event.emg
-        if len(emgVals) == 0:
-            emgVals.append(event.timestamp)
+        #if len(emgVals) == 0:
+        emgVals.append(event.timestamp)
         #vals.append(event.timestamp)
         emgVals.append(emg[0])
         emgVals.append(emg[1])
@@ -100,6 +100,7 @@ class Listener(myo.DeviceListener):
         emgVals.append(emg[6])
         emgVals.append(emg[7])
 
+        '''
         if len(emgVals) >= 64:
             self.write_emg_data()
             emgVals.clear()
@@ -117,7 +118,7 @@ class Listener(myo.DeviceListener):
             print("EMG_DATA")
             print(EMG_DATA[0])
             self.write_emg_data()
-        '''
+        emgVals.clear()
 
     def on_pose(self, event):
         print(event.pose)
@@ -229,7 +230,7 @@ def thread1():
 
 
 threading.Thread(target=temp_f, args=[hub, listener]).start()
-threading.Thread(target=thread1()).start()
+#threading.Thread(target=thread1()).start()
 
 time.sleep(6)
 ani = animation.FuncAnimation(
